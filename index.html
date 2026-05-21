@@ -291,8 +291,7 @@
                             id="current-timestamp">TIMESTAMP: 2026.05.20_15:37__UTC</span>
                     </div>
                     <h1 class="font-headline-xl text-headline-xl text-primary-fixed-dim terminal-cursor min-h-[104px] md:min-h-[52px]"
-                        data-stitch-orig-opacity="0" id="typewriter-name">LEELA KRISHNA RAGHAVENDRA PATCHIPULUSULEELA
-                        KRISHNA RAGHAVENDRA PATCHIPULUSU</h1>
+                        data-stitch-orig-opacity="0" id="typewriter-name"></h1>
                     <p
                         class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4 animate-in fade-in duration-1000 delay-500 leading-relaxed">
                         Specialized <span class="text-primary font-bold">Cloud Architect</span> and DevOps Engineer
@@ -826,6 +825,7 @@
         const typeTarget = document.getElementById('typewriter-name');
         const fullName = "LEELA KRISHNA RAGHAVENDRA PATCHIPULUSU";
         let charIndex = 0;
+        typeTarget.textContent = '';
 
         function type() {
             if (charIndex < fullName.length) {
